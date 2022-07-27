@@ -1,0 +1,58 @@
+.fa-search {
+  font-size: 20px;
+}
+
+.fa-search:hover {
+  cursor: pointer;
+}
+
+.search {
+  margin: 0 auto;
+  padding: 20px 0;
+
+  &--pesquisar {
+    padding: 6px 0 0 0;
+    margin-left: -40px;
+  }
+}
+
+.card {
+  margin: 0 auto;
+}
+
+.temp {
+  font-size: 40px;
+  font-weight: 600;
+  vertical-align: middle;
+  margin-left: -10px;
+}
+
+.description {
+  padding-top: 30px;
+
+  &--text {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.maxMin {
+  padding: 10px 0 25px 0;
+
+  &--tempmin {
+    padding-left: 20px;
+  }
+}
+.card-footer {
+  &--content {
+    padding: 12px;
+  }
+
+  &--title {
+    @media (max-width: 800px) {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
+

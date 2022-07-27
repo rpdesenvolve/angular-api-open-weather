@@ -1,0 +1,31 @@
+.login-container {
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+form {
+  padding: 15px 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.btn-login {
+  font-weight: bold;
+  color: #fecc00;
+  background-color: #1d1d1b;
+  border: unset;
+}
+
+.btn-login:hover {
+  font-weight: bold;
+  color: #1d1d1b;
+  background-color: #fecc00;
+  border: unset;
+}

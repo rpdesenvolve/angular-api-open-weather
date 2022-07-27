@@ -1,0 +1,9 @@
+<header class="sticky-top header header--color">
+  <nav class="navbar">
+    <a class="navbar-brand"><img class="header--img" src="./assets/img/logo.png" alt=""></a>
+    <div *ngIf="!isLogin">
+      <span class="mr-1"><strong>Bem vindo</strong> {{usuario.nome}}!</span>
+      <button class="btn btn-default header--logout" (click)="logout()">Logout</button>
+    </div>
+  </nav>
+</header>

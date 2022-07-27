@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-sm-8 search">
+      <div class="row">
+        <div class="col-md-11">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Pesquise por local" [(ngModel)]="pesquisa">
+          </div>
+        </div>
+        <div class="col-md-1 search--pesquisar">
+          <a (click)="pesquisar()"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card text-white bg-secondary col-md-8 col-sm-8">
+      <div class="card-header col-md-12">
+        <strong>Clima atual em {{weather.city}}</strong> <br>
+        <span>{{ hoje | date:'HH:mm' }}</span>
+      </div>
+
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./assets/icons/{{weather.icon}}.png" alt="{{weather.description}}">
+            <span class="temp">{{weather.temp}}°C</span> <br>
+          </div>
+          <div class="col-md-6 description">
+            <span class="text-uppercase description--text">{{weather.description}}</span> <br>
+            <span>SENSAÇÃO TÉRMICA {{weather.sensacao}}°C</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 maxMin">
+        <span>Máx.: {{weather.tempmax}}°C</span>
+        <span class="maxMin--tempmin">Min.:{{weather.tempmin}}°C</span>
+      </div>
+
+      <div class="col-md-12 card-footer">
+        <div class="row">
+          <div class="col-md-3 card-footer--content">
+            <span class="card-footer--title">VENTO</span> <br>
+            <span>{{weather.vento}} km/h</span>
+          </div>
+          <div class="col-md-3 card-footer--content">
+            <span class="card-footer--title">UMIDADE</span> <br>
+            <span>{{weather.umidade}} %</span>
+          </div>
+          <div class="col-md-3 card-footer--content">
+            <span class="card-footer--title">VISIBILIDADE</span> <br>
+            <span>{{weather.visibilidade}} km</span>
+          </div>
+          <div class="col-md-3 card-footer--content">
+            <span class="card-footer--title">PRESSÃO</span> <br>
+            <span>{{weather.pressao}} mb</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

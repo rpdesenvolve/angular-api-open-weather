@@ -1,0 +1,33 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="container">
+        <div class="col-md-4 col-sm4 login-container">
+          <div class="card">
+            <div class="card-header card-header-pb">
+              <p class="card-category text-center">Bem vindo ao Open Weather da Builders</p>
+            </div>
+
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+              <div class="form-group">
+                <input type="text" class="form-control" id="usuario" autocomplete="off" placeholder="Usuário" formControlName="usuario">
+              </div>
+
+              <div class="form-group">
+                <input type="password" class="form-control" id="senha" autocomplete="off" placeholder="Senha" formControlName="senha">
+              </div>
+
+              <button type="submit" class="btn btn-login">ENTRAR</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ngx-spinner size="medium" type="ball-spin" >
+  <p style="font-size: 20px; color: white">Logando...</p>
+</ngx-spinner>
+
+<!--<notifier-container></notifier-container>-->
